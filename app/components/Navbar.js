@@ -4,7 +4,6 @@ import {LoginLink, LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
 import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
 
 
-
 export default async function Navbar() {
   const {isAuthenticated} = getKindeServerSession();
   const isUserAuthenticated = await isAuthenticated();
